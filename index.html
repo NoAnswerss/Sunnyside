@@ -3,16 +3,145 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="public/images/favicon-32x32.png">
+    <link rel="icon" href="public/images/favicon-34x34.png">
     <link rel="stylesheet" href="public/style.css">
-
+    
     <title>Tailwind Base Project</title>
-
+    
     <!-- Fonts -->
-
-    <script src="https://kit.fontawesome.com/29f99118dd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;900&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/49f99118dd.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1 class="text-center w-full">TAILWIND</h1>
-</body>
-</html>
+    <div style="background-image: url('./src/images/desktop/image-header.jpg');" class="bg-cover bg-no-repeat bg-center h-[700px]">
+        <header class="bg-Skyblue pt-8">
+            <div class="flex flex-row justify-between">
+                <div class="mr-auto ml-8 p-4">
+                    <img src="./src/images/logo.svg" alt="logo" class="h-8">
+                </div>
+                <nav class="text-white mt-6 text-[18px] mr-2">
+                    <a href="" class="mx-5">About</a>
+                    <a href="" class="mx-6">Services</a>
+                    <a href="" class="mx-6">Projects</a>
+                    <a href="" class="mx-6 mr-11 bg-white rounded-full text-Very-dark-desaturated-blue px-9 py-5 font-fraunces uppercase font-bold text-base">Contact</a>
+                </nav>
+                <button class="lg:hidden">
+                    <div>Bar</div>
+                </button>
+            </div>
+        </header>
+        <div class="flex justify-center flex-col">
+            <h1 class="font-fraunces font-bold bg-Skyblue text-center text-white mt-8 text-6xl tracking-widest pt-24">WE ARE CREATIVES</h1>
+            <div class="flex items-center justify-center pt-8">
+                <img src="./src/images/icon-arrow-down.svg" alt="arrow down">
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--Main--> 
+    
+    
+    <div class="flex">
+        <div class="flex items-center">
+            <div class="pl-36 w-1/2">
+                <h2 class="font-fraunces text-[39px] text-Very-dark-desaturated-blue font-extrabold mb-8 pr-28">Transform your <br>brand</br></h2>
+                <p class="text-Dark-grayish-blue pb-10 mr-4 font-semibold pr-64 text-xl">We are a full-service creative agency specializing in helping brands grow fast. 
+                Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                <p class="font-fraunces font-extrabold text-lg">LEARN MORE</p>
+            </div>
+            <div class="w-1/2">
+                <img class="w-full" src="./src/images/desktop/image-transform.jpg" alt="egg">
+            </div>
+        </div>
+        </div>
+        <div class="flex flex-row">
+            <div class="w-1/2">
+                <img class="w-full" src="/src/images/desktop/image-stand-out.jpg" alt="pink-cup">
+            </div>
+            <div class="w-1/2 text-center flex flex-col justify-center p-[9em]">
+                <h2 class="font-fraunces text-[39px] text-Very-dark-desaturated-blue font-extrabold text-left mb-8">Stand out to the right <br> audience</h2>
+                <p class="text-Dark-grayish-blue font-semibold text-xl text-left pb-10">Using a collaborative formula of designers, researchers,<br> photographers, videographers, and copywriters, we’ll <br>build and extend your brand in digital places.</p>
+                <p class="font-fraunces font-extrabold text-lg text-left">Learn more</p>
+            </div>
+        </div>
+        
+        
+        <div class="flex flex-row h-full">
+            <div style="background-image: url('./src/images/desktop/image-graphic-design.jpg');" class="w-1/2 bg-cover bg-no-repeat flex flex-col justify-end p-12">
+                <div>
+                    <h2 class="font-fraunces text-[39px] text-Very-dark-desaturated-blue mb-8 text-center">Graphic Design</h2>
+                    <p class="font-barlow text-center mx-64">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+                </div>
+            </div>
+            <div style="background-image: url('./src/images/desktop/image-photography.jpg');" class="w-1/2 bg-cover bg-no-repeat flex flex-col justify-end p-12">
+                <div>
+                    <h2 class="font-fraunces text-[39px] text-Very-dark-desaturated-blue font-extrabold text-center mb-8">Photography</h2>
+                    <p class="font-barlow text-center mx-64">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+                </div>
+            </div>
+        </div>
+
+        
+        </div>
+        
+        
+        <!--Testimonials-->
+        <h2 class="text-center font-fraunces mt-40 pb-10">CLIENT TESTIMONIALS</h2>
+        <div class="flex justify-center">
+            <div>
+                <div class="flex justify-around">
+                    <img class="max-h-[100%] max-w-[5%] rounded-full" src="/src/images/image-emily.jpg" alt="image-emily">
+                    <img class="max-h-[100%] max-w-[5%] rounded-full justify-items-center" src="/src/images/image-thomas.jpg" alt="image-thomas">
+                    <img class="max-h-[100%] max-w-[5%] rounded-full justify-items-center" src="/src/images/image-jennie.jpg" alt="image-jennie">
+                </div>
+                
+                
+                <div class="flex justify-around">
+                    <p class="text-center p-30">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                    <p class="text-center p-30">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+                    <p class="text-center p-30">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+                </div>
+                <div class="flex justify-around text-center">
+                    <h2>Emily R.</h2>
+                    <h2>Thomas S.</h2>
+                    <h2>Jennie F.</h2>
+                </div>
+                <div class="flex justify-around">
+                    <p>Marketing Director</p>
+                    <p>Chief Operating Officer</p>
+                    <p>Business Owner</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex flex-row w-full">
+            <img src="/src/images/desktop/image-gallery-milkbottles.jpg" alt="milk-bottles" class="w-1/4">
+            <img src="src/images/desktop/image-gallery-orange.jpg" alt="orange" class="w-1/4">
+            <img src="/src/images/desktop/image-gallery-cone.jpg" alt="icecream-cone" class="w-1/4">
+            <img src="src/images/desktop/image-gallery-sugarcubes.jpg" alt="sugarcubes" class="w-1/4">
+        </div>
+        
+        <footer class="flex justify-center flex-col">
+            <div>
+                <img src="src/images/logo.svg" alt="logo">
+            </div>
+            <div>
+                <ul>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                </ul>
+            </div>
+            <ul class="flex flex-row">
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            </ul>
+        </footer>
+    </body>
+    </html>
