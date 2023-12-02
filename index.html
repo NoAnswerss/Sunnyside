@@ -24,19 +24,26 @@
                 <!--Hamburger Menu--> 
                 
                 <div class="block lg:hidden">
-                    <button id="toggleMenu" class="text-white focus:outline-none">
+                    <button id="toggleMenu" class="text-white focus:outline-none" onclick="toggleMenu()">
                         <i class="fa-solid fa-bars"></i>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-            
-            <nav class="text-white mt-6 text-[18px] mr-2 lg:visible">
-                <a href="" class="mx-5">About</a>
-                <a href="" class="mx-6">Services</a>
-                <a href="" class="mx-6">Projects</a>
-                <a href="" class="mx-6 mr-11 bg-white rounded-full text-Very-dark-desaturated-blue px-9 py-5 font-fraunces uppercase font-bold text-base hover:bg-[#6ad1ff] hover:text-white transition ease-in duration-300">Contact</a>
-            </nav>
+                    </button>
+                </div>
+                
+                <nav id="dropdown-menu" class="hidden lg:flex flex-col items-start text-white mt-6 text-[18px] mr-2">
+                    <a href="" class="mx-5">About</a>
+                    <a href="" class="mx-6">Services</a>
+                    <a href="" class="mx-6">Projects</a>
+                    <a href="" class="mx-6 mr-11 bg-white rounded-full text-Very-dark-desaturated-blue px-9 py-5 font-fraunces uppercase font-bold text-base hover:bg-[#6ad1ff] hover:text-white transition ease-in duration-300">Contact</a>
+                </nav>
+                
+                <script>
+                    function toggleMenu() {
+                        var dropdownMenu = document.getElementById('dropdown-menu');
+                        dropdownMenu.classList.toggle('hidden');
+                    }
+                </script>
+                
         </div>
     </header>
     <div class="flex flex-col items-center justify-center text-[50px] grow">
@@ -73,7 +80,6 @@
             <div class="border-[#fed8d1] border-4 lg:w-[8.5rem] rounded-full relative bottom-3 lg:mt-0 sm:w-1/3 -z-10 sm:self-center lg:self-start"></div>
         </div>
     </div>
-    
     
     <div class="flex flex-col lg:flex-row justify-between lg:h-[70vh]">
         <div style="background-image: url('./src/images/desktop/image-graphic-design.jpg');" class="bg-cover bg-no-repeat flex flex-col justify-end p-12 lg:w-1/2">
@@ -120,18 +126,19 @@
     <!--Images Container start-->
     <div class="flex flex-row w-full sm:flex-wrap lg:flex-nowrap">
         <div class="sm:w-1/2 lg:w-1/4">
-            <img src="/src/images/desktop/image-gallery-milkbottles.jpg" alt="milk-bottles">
+            <img src="/src/images/desktop/image-gallery-milkbottles.jpg" alt="Milk Bottles">
         </div>
         <div class="sm:w-1/2 lg:w-1/4">
-            <img src="src/images/desktop/image-gallery-orange.jpg" alt="orange">
+            <img src="src/images/desktop/image-gallery-orange.jpg" alt="Orange">
         </div>
         <div class="sm:w-1/2 lg:w-1/4">
-            <img src="/src/images/desktop/image-gallery-cone.jpg" alt="icecream-cone">
+            <img src="/src/images/desktop/image-gallery-cone.jpg" alt="Ice Cream Cone">
         </div>
         <div class="sm:w-1/2 lg:w-1/4">
-            <img src="src/images/desktop/image-gallery-sugarcubes.jpg" alt="sugarcubes">
+            <img src="src/images/desktop/image-gallery-sugarcubes.jpg" alt="Sugar Cubes">
         </div>
     </div>
+    
     <!--Images Container End-->
     
     <footer class="flex justify-center flex-col bg-Light-cyan lg:pb-20 sm:pb-24 sm:pt-12">
@@ -140,16 +147,16 @@
         </div>
         <div>
             <ul class="flex justify-center sm:gap-36 lg:gap-[3rem] pb-12 text-Dark-desaturated-cyan lg:text-base sm:text-[2.75rem]">
-                <li class="cursor-pointer hover:text-white duration-300">About</li>
-                <li class="cursor-pointer hover:text-white duration-300">Services</li>
-                <li class="cursor-pointer hover:text-white duration-300">Projects</li>
+                <li><a href="#" class="nav-link" aria-label="About" role="menuitem" tabindex="0" class="cursor-pointer hover:text-white duration-300">About</a></li>
+                <li><a href="#" class="nav-link" aria-label="Services" role="menuitem" tabindex="0" class="cursor-pointer hover:text-white duration-300">Services</a></li>
+                <li><a href="#" class="nav-link" aria-label="Projects" role="menuitem" tabindex="0" class="cursor-pointer hover:text-white duration-300">Projects</a></li>
             </ul>
         </div>
         <ul class="flex justify-center sm:gap-16 lg:gap-[1.7rem] text-Dark-desaturated-cyan lg:pb-12 sm:pb-28 sm:pt-48 lg:pt-0 lg:text-base sm:text-6xl">
-            <li><a href=""><i class="fa-brands fa-square-facebook cursor-pointer hover:text-white duration-300"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram cursor-pointer hover:text-white duration-300"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-twitter cursor-pointer hover:text-white duration-300"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-pinterest cursor-pointer hover:text-white duration-300"></i></a></li>
+            <li><a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-square-facebook cursor-pointer hover:text-white duration-300"></i></a></li>
+            <li><a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram cursor-pointer hover:text-white duration-300"></i></a></li>
+            <li><a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-twitter cursor-pointer hover:text-white duration-300"></i></a></li>
+            <li><a href="#" class="social-icon" aria-label="Pinterest"><i class="fa-brands fa-pinterest cursor-pointer hover:text-white duration-300"></i></a></li>
         </ul>
     </footer>
 </body>
