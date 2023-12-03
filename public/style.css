@@ -1142,6 +1142,10 @@ html, body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:visible {
+    visibility: visible;
+  }
+
   .lg\:relative {
     position: relative;
   }
