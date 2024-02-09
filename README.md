@@ -2,3 +2,5 @@
 
 rebuild css with:
 npm run build-css
+
+Uses tailwindCSS
